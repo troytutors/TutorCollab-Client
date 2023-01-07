@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
 import "@fortawesome/fontawesome-free/js/all";
 
-const io = SocketIO("https://collabhubbeta.herokuapp.com/");
+const io = SocketIO("https://tutorcollabserver.herokuapp.com/");
 
 var Vue = createApp(App);
 Vue.use(router).mount("#app");
