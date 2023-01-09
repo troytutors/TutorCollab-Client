@@ -25,7 +25,7 @@ export default {
         title: "About TutorCollab",
         background: "#292d34",
         text:
-          "TutorCollab, made by CollabLab, is an all-in-one collaboration and communication solution created for " +
+          "TutorChat, made by CollabLab, is an all-in-one collaboration and communication solution created for " +
           "Troy Tutors users. It allows users to write code together in real-time, run it, draw on virtual " +
           "whiteboards, hold one-on-one and group video calls, host live lectures and webinars, chat, and screen " +
           "share. Outside of CollabLab, an all-in-one solution for all of these tasks does not exist anywhere else in the world!",
@@ -40,7 +40,7 @@ export default {
         position: "center",
         color: "white",
         background: "#292d34",
-        text: "If you run into any issues or discover any bugs on TutorCollab, please report them to bugs@troytutors.com",
+        text: "If you run into any issues or discover any bugs on TutorChat, please report them to bugs@troytutors.com",
         icon: "question",
         iconColor: "#dc1c13",
         confirmButtonText: "OK",
@@ -81,7 +81,7 @@ export default {
       <br />
       <a
         class="button-ends"
-        href="https://www.troytutors.com/schedule-online"
+        href="https://www.troytutors.com/"
         target="_blank"
         style="color: white; text-decoration: none; text-align: center"
       >
