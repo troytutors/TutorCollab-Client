@@ -4,7 +4,7 @@ const { shallowRef } = require("vue")
 import { reactive } from "vue";
 import Editor from "../components/editor";
 import { editor } from "../components/editor";
-import { code_greeting } from "../components/editor";
+// import { code_greeting } from "../components/editor";
 
 const state = reactive({
   language: "python",
@@ -52,10 +52,12 @@ export default {
         if (data[0].length > 0) {
           state.code = data[0];
         } else {
-          state.code = code_greeting;
+          state.code = data[0];
+          // state.code = code_greeting;
         }
       } else {
-        state.code = code_greeting;
+        state.code = data[0];
+        // state.code = code_greeting;
       }
       editor.setValue(state.code);
       if (data[1] !== null) {

@@ -149,18 +149,22 @@ export default {
     };
 
     const undo = () => {
+      // state.redoStack.push(state.undoStack[state.undoStack.length - 1]);
       undoAction(state);
       emit("undo");
     };
 
     const redo = () => {
+      // state.undoStack.push(state.redoStack[state.redoStack.length - 1]);
       redoAction(state);
       emit("redo");
     };
 
     const clear = () => {
+      state.undoStack.push(state.redoStack.pop());
+
       clearSvg(state.svg);
-      state.undoStack = [];
+      // state.undoStack = [];
       state.redoStack = [];
       emit("clear");
     };
@@ -189,16 +193,18 @@ export default {
     };
 
     const simulate_undo = () => {
+      // state.redoStack.push(state.undoStack[state.undoStack.length - 1]);
       undoAction(state);
     };
 
     const simulate_redo = () => {
+      // state.undoStack.push(state.redoStack[state.redoStack.length - 1]);
       redoAction(state);
     };
 
     const simulate_clear = () => {
       clearSvg(state.svg);
-      state.undoStack = [];
+      // state.undoStack = [];
       state.redoStack = [];
     };
 
